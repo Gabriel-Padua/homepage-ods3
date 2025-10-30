@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Saúde Digital — Saúde Já & Meu SUS Digital</title>
+    <meta
+      name="description"
+      content="Projeto de extensão sobre o uso consciente de aplicativos do SUS: Saúde Já e Meu SUS Digital, facilitando o acesso a serviços de saúde."
+    />
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1><i class="fa-solid fa-hospital"></i> Saúde Digital</h1>
+        <p class="lead">
+          Projeto de extensão — Uso consciente dos aplicativos Saúde Já & Meu
+          SUS Digital
+        </p>
+        <nav>
+          <a href="#sobre"><i class="fa-solid fa-circle-info"></i> O que são</a>
+          <a href="#beneficios"
+            ><i class="fa-solid fa-heart-pulse"></i> Benefícios</a
+          >
+          <a href="#como-usar"
+            ><i class="fa-solid fa-mobile-screen-button"></i> Como usar</a
+          >
+          <a href="#mapa"
+            ><i class="fa-solid fa-map-location-dot"></i> Unidades</a
+          >
+          <a href="#acoes"><i class="fa-solid fa-people-group"></i> Ações</a>
+          <a href="#ods3"><i class="fa-solid fa-leaf"></i> ODS 3</a>
+          <a href="#materiais"
+            ><i class="fa-solid fa-book-open"></i> Materiais</a
+          >
+          <a href="#referencias"><i class="fa-solid fa-book"></i> Fontes</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card" id="sobre">
+        <h2>
+          <i class="fa-solid fa-circle-info"></i> O que são os aplicativos?
+        </h2>
+        <p class="small">
+          O <strong>Saúde Já</strong> e o <strong>Meu SUS Digital</strong> são
+          aplicativos do Governo Federal que facilitam o acesso a serviços de
+          saúde, agendamento de consultas, exames, vacinação e histórico médico
+          digital.
+        </p>
+        <div class="grid">
+          <div>
+            <h3>Saúde Já</h3>
+            <ul class="icon">
+              <li>Agendamento de consultas e exames</li>
+              <li>Acesso ao histórico de atendimentos</li>
+              <li>Informações sobre vacinação</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Meu SUS Digital</h3>
+            <ul class="icon">
+              <li>Carteirinha digital do SUS</li>
+              <li>Resultados de exames laboratoriais</li>
+              <li>Cadastro de dependentes</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="beneficios">
+        <h2>
+          <i class="fa-solid fa-heart-pulse"></i> Benefícios do uso digital
+        </h2>
+        <p class="small">
+          O uso de aplicativos de saúde aumenta a eficiência, reduz filas e
+          ajuda familiares a auxiliar idosos e pessoas com dificuldades
+          digitais.
+        </p>
+        <div class="grid">
+          <div>
+            <h4>Para a população</h4>
+            <p class="small">
+              Acesso rápido a agendamentos, histórico de saúde e informações
+              importantes sobre cuidados médicos.
+            </p>
+          </div>
+          <div>
+            <h4>Para familiares</h4>
+            <p class="small">
+              Facilita o acompanhamento de idosos e dependentes, garantindo
+              segurança e apoio na utilização da tecnologia.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="como-usar">
+        <h2>
+          <i class="fa-solid fa-mobile-screen-button"></i> Como usar os
+          aplicativos
+        </h2>
+        <ol class="small">
+          <li>Baixe o aplicativo pelo Google Play ou App Store.</li>
+          <li>Crie ou acesse sua conta utilizando CPF e senha.</li>
+          <li>Cadastre seus dependentes, se necessário.</li>
+          <li>Agende consultas, veja vacinas e resultados de exames.</li>
+          <li>
+            Use os tutoriais disponíveis no aplicativo para aprender
+            funcionalidades.
+          </li>
+        </ol>
+      </section>
+
+      <section class="card" id="mapa">
+        <h2><i class="fa-solid fa-video"></i> Tutoriais em Vídeo</h2>
+        <p class="small">Clique no vídeo ou no título para ampliar:</p>
+
+        <!-- Vídeo principal grande -->
+        <div class="main-video" id="mainVideoContainer">
+          <p class="video-title" id="mainVideoTitle">
+            Conheça o Meu SUS Digital
+          </p>
+          <iframe
+            id="mainVideo"
+            src="https://www.youtube.com/embed/OSW3ovaYu_c"
+            frameborder="0"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <!-- Miniaturas abaixo -->
+        <div class="thumb-grid">
+          <div
+            class="thumb"
+            onclick="playInMain(this)"
+            data-title="Como acessar o Saúde Já"
+            data-src="https://www.youtube.com/embed/6jAHnwkZ7Lo"
+          >
+            <p class="thumb-title">Como acessar o Saúde Já</p>
+            <iframe
+              src="https://www.youtube.com/embed/6jAHnwkZ7Lo"
+              frameborder="0"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+
+          <div
+            class="thumb"
+            onclick="playInMain(this)"
+            data-title="Conheça o Meu SUS DIGITAL"
+            data-src="https://www.youtube.com/embed/OSW3ovaYu_c"
+          >
+            <p class="thumb-title">Conheça o Meu SUS DIGITAL</p>
+            <iframe
+              src="https://www.youtube.com/embed/OSW3ovaYu_c"
+              frameborder="0"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+
+          <div
+            class="thumb"
+            onclick="playInMain(this)"
+            data-title="Como agendar Consulta com Enfermagem"
+            data-src="https://www.youtube.com/embed/9UWjAMYAMBI"
+          >
+            <p class="thumb-title">Como agendar Consulta com Enfermagem</p>
+            <iframe
+              src="https://www.youtube.com/embed/9UWjAMYAMBI"
+              frameborder="0"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+
+          <div
+            class="thumb"
+            onclick="playInMain(this)"
+            data-title="Saber quais são as proximas vacinas"
+            data-src="https://www.youtube.com/embed/hw2mkDo-M4o"
+          >
+            <p class="thumb-title">Saber quais são as proximas vacinas</p>
+            <iframe
+              src="https://www.youtube.com/embed/hw2mkDo-M4o"
+              frameborder="0"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="acoes">
+        <h2><i class="fa-solid fa-people-group"></i> Ações do Projeto</h2>
+        <ul class="small">
+          <li>
+            <strong>Oficinas digitais:</strong> ensinando a usar Saúde Já e Meu
+            SUS Digital, presencialmente ou online.
+          </li>
+          <li>
+            <strong>Material educativo:</strong> cartilhas, vídeos e tutoriais
+            passo a passo.
+          </li>
+          <li>
+            <strong>Suporte a familiares:</strong> treinamento para auxiliar
+            idosos e dependentes no uso seguro dos aplicativos.
+          </li>
+          <li>
+            <strong>Divulgação de boas práticas:</strong> segurança de dados,
+            atualizações e funcionalidades importantes.
+          </li>
+        </ul>
+      </section>
+
+      <section class="card" id="ods3">
+        <h2><i class="fa-solid fa-leaf"></i> ODS 3 — Saúde e Bem-Estar</h2>
+        <p class="small">O projeto contribui para o ODS 3 ao:</p>
+        <ul class="small">
+          <li>Facilitar o acesso a serviços de saúde digitais.</li>
+          <li>
+            Reduzir desigualdades no atendimento, ajudando populações mais
+            vulneráveis.
+          </li>
+          <li>Promover educação digital e segurança de dados em saúde.</li>
+        </ul>
+      </section>
+
+      <section class="card" id="materiais">
+        <h2><i class="fa-solid fa-book-open"></i> Materiais e downloads</h2>
+        <p class="small">
+          Aqui você encontra cartilhas, vídeos e tutoriais para usar os
+          aplicativos:
+        </p>
+        <ul class="small">
+          <li>
+            <a href="#" class="btn-download"
+              ><i class="fa-solid fa-file-pdf"></i> Cartilha: Guia Saúde Já
+              (PDF)</a
+            >
+          </li>
+          <li>
+            <a href="#" class="btn-download"
+              ><i class="fa-solid fa-file-pdf"></i> Cartilha: Guia Meu SUS
+              Digital (PDF)</a
+            >
+          </li>
+          <li>
+            <a href="#" target="_blank" class="btn-download"
+              ><i class="fa-solid fa-video"></i> Power Point: Uso dos
+              Aplicativos</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="card" id="referencias">
+        <h2><i class="fa-solid fa-book"></i> Fontes e referências úteis</h2>
+        <ul class="small">
+          <li>
+            <a href="https://www.saude.gov.br/saude-ja" target="_blank"
+              >Ministério da Saúde — Saúde Já</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.gov.br/saude/pt-br/assuntos/meu-sus"
+              target="_blank"
+              >Meu SUS Digital — Ministério da Saúde</a
+            >
+          </li>
+          <li>
+            <a href="https://www.gov.br/pt-br/servicos" target="_blank"
+              >Portal Gov.br — Serviços Digitais</a
+            >
+          </li>
+          <li>
+            <a href="https://bvsms.saude.gov.br/" target="_blank"
+              >Biblioteca Virtual em Saúde</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=uR_RAYVbHr4&list=PL0nNeInF8oclv86zBlQqoOqr6TT4gXVev"
+              target="_blank"
+              >Youtube - Playlist de Tutoriais</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p class="small">
+          Projeto de extensão — &copy; 2025 — Contribui com a
+          <strong>ODS 3</strong>
+        </p>
+        <p class="small">
+          Trabalho acadêmico desenvolvido na
+          <strong>Cruzeiro do Sul Virtual</strong> — Curso de
+          <strong>Análise e Desenvolvimento de Sistemas</strong>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
