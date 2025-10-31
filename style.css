@@ -37,7 +37,7 @@ ul {
 }
 .video-title {
   cursor: pointer;
-  background: #4caf50;
+  background: #2b5282;
   color: #fff;
   padding: 10px;
   font-weight: bold;
@@ -69,7 +69,7 @@ ul {
 }
 .thumb:hover {
   transform: scale(1.05);
-  border-color: #4caf50;
+  border-color: #2b5282;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 .thumb iframe {
@@ -81,7 +81,7 @@ ul {
 }
 
 .thumb:hover .thumb-title {
-  color: #4caf50;
+  color: #2b5282;
 }
 @media (max-width: 700px) {
   .thumb-grid {
@@ -96,7 +96,7 @@ ul {
 }
 
 header {
-  background-color: #4caf50;
+  background-color: #2b5282;
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -136,12 +136,12 @@ nav a:hover {
 .card h2 {
   font-size: 1.8rem;
   margin-bottom: 15px;
-  color: #2e7d32;
+  color: #2b5282;
 }
 
 .card h3,
 .card h4 {
-  color: #1b5e20;
+  color: #2b5282;
 }
 
 .card p.small,
@@ -156,7 +156,7 @@ nav a:hover {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   margin-right: 8px;
-  color: #4caf50;
+  color: #2b5282;
 }
 
 /* Grid */
@@ -174,7 +174,7 @@ nav a:hover {
 /* Botões de download */
 .btn-download {
   display: inline-block;
-  background-color: #4caf50;
+  background-color: #2b5282;
   color: #fff;
   padding: 10px 15px;
   border-radius: 8px;
@@ -184,7 +184,7 @@ nav a:hover {
 }
 
 .btn-download:hover {
-  background-color: #388e3c;
+  background-color: #1f3b5a;
 }
 
 /* Footer */
@@ -204,4 +204,7 @@ footer p {
   .grid {
     flex-direction: column;
   }
+}
+#referencias a:hover {
+  color: #5a7fa6;
 }
